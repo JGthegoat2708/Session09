@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainam Golechha - Personal Profile</title>
+    <style>
+        /* CSS Styling - Strictly separated from HTML elements */
+        
+        :root {
+            --primary-color: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-color: #f3f4f6;
+            --section-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem;
+            padding: 0 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-top: 0;
+        }
+
+        section {
+            background-color: var(--section-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        /* Skills List Styling */
+        .skills-list {
+            list-style-type: square;
+            padding-left: 1.5rem;
+            columns: 2; /* Creates a 2-column layout for skills on wider screens */
+        }
+
+        .skills-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Projects List Styling */
+        .projects-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .projects-list li {
+            margin-bottom: 1.2rem;
+        }
+
+        .projects-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .projects-list a:hover {
+            text-decoration: underline;
+        }
+
+        .project-description {
+            margin-top: 0.2rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .skills-list {
+                columns: 1;
+            }
+            .container {
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Jainam Golechha</h1>
+            <p class="subtitle">Bachelor of Technology Computer Science and Engineering- II Year</p>
+        </header>
+
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I am Jainam Golechha. Aspiring Software Engineer | CSE Student at JECRC University.
+                    Passionate about technology, problem-solving, and real-world applications of AI. I believe in continuous learning and have hands-on experience through projects, coursework, and coding club involvement.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li> C/C++</li>
+                    <li>Python</li>
+                    <li>Project Management </li>
+                    <li>Leadership</li>
+                    <li>Soft-Spoken</li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul class="projects-list">
+                    <li>
+                        <a href="https://inquisitive-sherbet-4433d4.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            How AI is Transforming Education Blog
+                        </a>
+                        <p class="project-description">Explore immersive learning, personalised tutoring, instant feedback and how classrooms are evolving using AI.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JGthegoat2708/python-basics-25BCON1659" target="_blank" rel="noopener noreferrer">
+                           Python Program and Commits
+                        </a>
+                        <p class="project-description">This repository contains six advanced Python programs:
+
+factorial.py: Calculates factorial for a number n. fibonacci.py: Generates the Fibonacci sequence. struct.py: Stores student data using Python @dataclass. calculator.py: Performs complex mathematical operations. prime_checker.py: Checks if a number is prime. palindrome.py: Evaluates string symmetry.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JGthegoat2708/Session08" target="_blank" rel="noopener noreferrer">
+                            Session 08: Prove Fixes with Specification-Driven Tests
+                        </a>
+                        <p class="project-description">The primary focus of this session is executing a strict Red Before Green testing workflow[cite: 21], proving fixes through specification-driven tests, and identifying AI-generated testing traps ("Misleading Green")</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>
